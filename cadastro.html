@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="estilos/style.css">
+</head>
+<body>
+    <main id="main-cadastro">
+        <section class="sec-cadastro">
+            <div>
+                <p>Nome Completo</p>
+                <input type="text" name="" id="inome">
+                <p class="msgErro-cadastro"></p>
+            </div>
+            <div>
+                <p>E-mail</p>
+                <input type="email" name="" id="iemail">
+                <p class="msgErro-cadastro msgErro-email">E-mail inválido!</p>
+            </div>
+            <div>
+                <p>Sua Senha</p>
+                <input type="password" name="" id="isenha" placeholder="">
+                <p class="msgErro-cadastro"></p>
+            </div>
+            <div>
+                <p>Número de Telefone</p>
+                <input type="tel" name="" id="itelefone" placeholder="XX XXXXX-XXXX">
+                <p class="msgErro-cadastro msgErro-telefone">E-mail inválido!</p>
+            </div>
+            <div>
+                <p>Cpf</p>
+                <input type="text" name="" id="icpf" placeholder="XXX.XXX.XXX-XX">
+                <p class="msgErro-cadastro msgErro-cpf">E-mail inválido!</p>
+            </div>
+            <button class="btn-cadastro">Cadastrar</button>
+        </section>
+    </main>
+
+    <script type="module" src="scripts/cadastro.js"></script>
+</body>
+</html>
