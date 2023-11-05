@@ -5,7 +5,8 @@ let msgCpf = document.querySelector('.msgErro-cpf')
 let msgTelefone = document.querySelector('.msgErro-telefone')
 let inps = [...document.querySelectorAll('input')]
 const btnCadastro = document.querySelector('.btn-cadastro')
-
+let msg_cadastroRealizado = document.querySelector('.msg-cadastroRealizado')
+let btnCancelarmsg = document.querySelector('.btnCancelarMsg')
 function inputsComValores() {
     return inps.every((i)=>{
         return i.value
@@ -58,11 +59,14 @@ function MsgsErro() {
 }
 
 
+btnCancelarmsg.addEventListener('click',()=>{
+    msg_cadastroRealizado.close()
+})
 
 function verificaçãoCadastro() {
     MsgsErro()
     if (veritelefone() && veritelefone() && veriCpf()) {
-        alert('certo')
+        msg_cadastroRealizado.showModal()
     }
 }
 
