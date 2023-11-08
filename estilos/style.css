@@ -369,3 +369,38 @@ footer {
     align-items: center;
     height: 70%;
 }
+
+.header-encomenda {
+    text-align: center;  
+}
+
+.header-encomenda h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 3.2em;
+    color: var(--cor2);
+}
+
+.main-encomenda {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    gap: 40px;
+}
+
+
+.main-encomenda p {
+    text-align: center;
+}
+
+.main-encomenda select {
+    margin-top: 10px;
+    height: 30px;
+    width: 200px;
+}
+
+.main-encomenda input {
+    margin-top: 10px;
+    height: 30px;
+}
