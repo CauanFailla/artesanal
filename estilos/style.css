@@ -393,25 +393,29 @@ footer {
     width: 50%;
     height: 400px;
     gap: 0px 40px;
+    user-select: none;
 }
 
+.div-retirar {
+    display: flex;
+    justify-content: space-between;
+}
 
 .main-encomenda p {
     text-align: center;
 }
 
-.main-encomenda div {
-    margin-top: 50px;
-}
+
 
 .main-encomenda select {
     margin-top: 10px;
     height: 35px;
     font-size: 1em;
     width: 250px;
+    cursor: pointer;
 }
 
-.main-encomenda input {
+.main-encomenda #iquantidade {
     margin-top: 10px;
     height: 30px;
     font-size: 1em;
@@ -427,4 +431,36 @@ footer {
     font-size: 1em;
     width: 250px;
     border: 1px solid rgb(98, 97, 97);
+    cursor: pointer;
+}
+
+.opcões-retirar {
+    display: none;
+    position: absolute;
+    background-color: white;
+    width: 250px;
+    border-radius: 10px;
+    margin-top: 4px;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.315);
+    padding-left: 5px;
+    padding-bottom: 5px;
+}
+
+.opcões-retirar div {
+    margin-top: 5px;
+}
+
+.btn-encomendar {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: var(--cor2);
+    color: white;
+    font-size: 1em;
+    padding: 10px 30px;
+    margin-top: 32px;
+    border: none;
+    border-radius: 15px;
+    user-select: none;
+    cursor: pointer;
 }
