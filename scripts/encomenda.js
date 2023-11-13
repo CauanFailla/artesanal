@@ -25,8 +25,10 @@ let alimentosVisual = [...document.querySelectorAll('#ialimentos option')]
 let alimentoAtual
 let per = true
 let selecAt
-let btnRetirarOP = document.querySelector('.div-retirar')
-let divOpções = document.querySelector('.opcões-retirar')
+const btnRetirarOP = document.querySelector('.div-retirar')
+const divOpções = document.querySelector('.opcões-retirar')
+const btnEviarEncomenda = document.querySelector('.btn-encomendar')
+const divFinalizado = document.querySelector('.divEncomendaFinalizada')
 btnRetirarOP.addEventListener('click',()=>{
     if (divOpções.style.display == 'block') {
         divOpções.style.display = 'none'
@@ -65,4 +67,8 @@ alimentosVisual[0].addEventListener('select',(evt)=>{
         default:
             break;
     }
+})
+
+btnEviarEncomenda.addEventListener('click',()=>{
+    divFinalizado.showModal()
 })

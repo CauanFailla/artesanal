@@ -7,6 +7,7 @@ let inps = [...document.querySelectorAll('input')]
 const btnCadastro = document.querySelector('.btn-cadastro')
 let msg_cadastroRealizado = document.querySelector('.msg-cadastroRealizado')
 let btnCancelarmsg = document.querySelector('.btnCancelarMsg')
+
 function inputsComValores() {
     return inps.every((i)=>{
         return i.value
