@@ -8,7 +8,7 @@ let ScrollTime = setInterval(() => {
                 c -= 1
             }
             
-            document.querySelector('nav').style.top = `${c}px`
+            document.querySelector('header').style.top = `${c}px`
             scrol = s - 10
         } else {
             if (c < 0) {
@@ -17,11 +17,11 @@ let ScrollTime = setInterval(() => {
             if (c>= 0) {
                 c = 0
             }
-            document.querySelector('nav').style.top = `${c}px`
+            document.querySelector('header').style.top = `${c}px`
             scrol = s
         }
     } else {
-        document.querySelector('nav').style.top = `0px`
+        document.querySelector('header').style.top = `0px`
     }
 }, 5)
 export {ScrollTime,c,scrol}

@@ -1,4 +1,7 @@
 const hd = document.createElement('header')
+const btnMenu = document.createElement('span')
+btnMenu.classList.add('material-icons')
+btnMenu.innerHTML = 'menu'
 const nv = document.createElement('nav')
 let linksNav = []
 function criarLinks() {
@@ -20,7 +23,9 @@ function definirNomesLinks()  {
 criarLinks()
 definirNomesLinks()
 document.body.appendChild(hd)
+hd.appendChild(btnMenu)
 hd.appendChild(nv)
+
 linksNav.map((l)=>{
     nv.appendChild(l)
 })
