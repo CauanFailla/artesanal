@@ -70,6 +70,6 @@ alimentosVisual[0].addEventListener('select',(evt)=>{
     }
 })
 
-btnEviarEncomenda.addEventListener('click',()=>{
+/*btnEviarEncomenda.addEventListener('click',()=>{
     divFinalizado.showModal()
-})
+})*/

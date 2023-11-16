@@ -272,8 +272,7 @@ footer {
 .itens-cardapio {
     margin-top: 30px;
     text-align: center;
-    display: grid;
-    grid-template-columns: 450px ;
+    
     gap: 30px;
 }
 
@@ -283,6 +282,11 @@ footer {
 
 .itens-cardapio p {
     margin: 10px 0px;
+}
+
+.itens-cardapio > div {
+    margin: auto;
+    width: 40vw;
 }
 
 .subts {
@@ -401,7 +405,7 @@ footer {
     justify-content: center;
     align-items: center;
     width: 50%;
-    height: 300px;
+    height: 60vh;
     gap: 0px 40px;
     user-select: none;
 }
@@ -521,7 +525,7 @@ footer {
     }
     nav a {
         border-top: 1px solid var(--cor3);
-        height: 25vh;
+        height: 23vh;
         display: flex;
         justify-content: center;
         align-items: center;   
@@ -574,5 +578,18 @@ footer {
 
     .Mapa iframe {
         width: 80%;
+    }
+
+    .header-cardapio h1 {
+        font-size: 3em;
+    }
+
+    .itens-cardapio > div {
+        width: 50vw !important;
+        font-size: 0.9em;
+    } 
+
+    .header-encomenda h1 {
+        font-size: 2.8em;
     }
 } 
