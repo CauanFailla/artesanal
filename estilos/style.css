@@ -34,7 +34,6 @@ header {
     user-select: none;
     top: 0;
     position: fixed;
-    height: 50px;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -42,14 +41,21 @@ header {
     background-color: #1F272A;
     user-select: none;
     z-index: 1;
+    
 }
 
 header span {
-    display: none;
+
+    display: none !important;
+    color: white;
+    font-size: 2.5em !important;
+    padding: 5px;
 }
 
 
-
+header nav {
+    padding: 16px;
+}
 
 
 header a {
@@ -499,31 +505,74 @@ footer {
 }
 
 @media screen and (max-width: 700px){
-    body {
-        background-color: #090909;
-    }
 
     header {
         height: auto;
     }
 
     header span {
-        color: white;
-        font-size: 5em;
+        display: block !important;
+        cursor: pointer;
     }
 
     nav {
+        display: none;
         width: 100%;
     }
     nav a {
         border-top: 1px solid var(--cor3);
-        height: 24vh;
+        height: 25vh;
         display: flex;
         justify-content: center;
         align-items: center;   
         margin: 0;
-        font-size: 1.3em;
+        font-size: 1.1em;
     }
 
+    main .fundoImg {
+        height: 720px;
+    }
 
+    main .fundoImg h1 {
+        font-size: 4em;
+    }
+
+    main .iconsTit img {
+        width: 25px;
+        height: 25px;
+        margin-top:30px;
+    }
+
+    main .fundoImg h2 {
+        font-size: 1.5em;
+    }
+
+    main .fundoImg p {
+        font-size: 1.2em !important;
+    }
+    main .sobre .tit-sobre {
+        font-size: 1em;
+        width: 130px;
+    }
+
+    .sobre .text-sobre {
+        font-size: 0.9em;
+        width: 300px;
+    }
+
+    .img-sobre h1 {
+        font-size: 2.4em;
+    }
+
+    .img-sobre img {
+        width: 50%;
+    }
+
+    .Mapa h1 {
+        font-size: 1.5em;
+    }
+
+    .Mapa iframe {
+        width: 80%;
+    }
 } 

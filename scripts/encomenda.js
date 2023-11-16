@@ -1,5 +1,6 @@
 import * as headerDef from './contructDef.js'
 import * as scrollMec from './mecanicaScroll.js'
+import * as menuLinks from './menuLinks.js'
 class Alimentos {
     constructor(ingredientes) {
         this.ingredientes = ingredientes

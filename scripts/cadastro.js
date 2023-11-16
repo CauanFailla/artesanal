@@ -1,5 +1,6 @@
 import * as ScrollMeq from './mecanicaScroll.js'
 import * as HeaderCons from './contructDef.js'
+import * as menuLinks from './menuLinks.js'
 let msgEmail = document.querySelector('.msgErro-email')
 let msgCpf = document.querySelector('.msgErro-cpf')
 let msgTelefone = document.querySelector('.msgErro-telefone')
