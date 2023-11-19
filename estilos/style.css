@@ -534,25 +534,26 @@ footer {
     }
 
     main .fundoImg {
-        height: 720px;
+        height: 640px;
     }
 
     main .fundoImg h1 {
-        font-size: 4em;
+        font-size: 3.2em;
     }
 
     main .iconsTit img {
-        width: 25px;
-        height: 25px;
+        width: 15px;
+        height: 15px;
         margin-top:30px;
+        margin: 0px;
     }
 
     main .fundoImg h2 {
-        font-size: 1.5em;
+        font-size: 1.3em;
     }
 
     main .fundoImg p {
-        font-size: 1.2em !important;
+        font-size: 1em !important;
     }
     main .sobre .tit-sobre {
         font-size: 1em;
@@ -565,7 +566,7 @@ footer {
     }
 
     .img-sobre h1 {
-        font-size: 2.4em;
+        font-size: 2.1em;
     }
 
     .img-sobre img {
@@ -573,6 +574,7 @@ footer {
     }
 
     .Mapa h1 {
+        text-align: center;
         font-size: 1.5em;
     }
 
@@ -580,8 +582,12 @@ footer {
         width: 80%;
     }
 
+    .sec-cardapio {
+        width: 80vw;
+    }
+
     .header-cardapio h1 {
-        font-size: 3em;
+        font-size: 2.5em;
     }
 
     .itens-cardapio > div {
@@ -592,4 +598,24 @@ footer {
     .header-encomenda h1 {
         font-size: 2.8em;
     }
+
+    .itens-cardapio h3 {
+        margin-top:5px;
+    }
+
+    .main-cardapio h1,h2 {
+        text-align: center;
+        font-size: 1.2em;
+    }
+
+    .main-encomenda select,.div-retirar,#iquantidade {
+        width: 210px;
+        font-size: 0.9em !important;
+        height: 30px;
+    }
+
+    .sec-cadastro {
+        width: 90vw;
+    }
+
 } 
